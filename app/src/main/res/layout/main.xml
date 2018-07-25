@@ -8,7 +8,7 @@
 
     <com.zhxh.xtouchsystem.touch.CLinearLayout
         android:id="@+id/my_linear_layout"
-        android:layout_width="500px"
+        android:layout_width="450px"
         android:layout_height="600px"
         android:layout_gravity="center"
         android:background="#00f"
@@ -17,8 +17,8 @@
 
         <com.zhxh.xtouchsystem.touch.CTextView
             android:id="@+id/my_text_view"
-            android:layout_width="180px"
-            android:layout_height="180px"
+            android:layout_width="230px"
+            android:layout_height="280px"
             android:background="#f00"
             android:clickable="true" />
 
@@ -27,7 +27,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="90px"
-            android:text="@string/btn_conflict" />
+            android:text="@string/btn_conflict"
+            android:textAllCaps="false" />
 
     </com.zhxh.xtouchsystem.touch.CLinearLayout>
 
