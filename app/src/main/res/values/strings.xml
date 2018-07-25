@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">XTouchSystem</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_conflict">Touch Conflict</string>
+    <string name="title_activity_conflict_main">ConflictMainActivity</string>
+</resources>

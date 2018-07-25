@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhxh.xtouchsystem.touch.CFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_frame_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="120px"
+    android:background="#3ff">
+
+    <com.zhxh.xtouchsystem.touch.CLinearLayout
+        android:id="@+id/my_linear_layout"
+        android:layout_width="500px"
+        android:layout_height="600px"
+        android:layout_gravity="center"
+        android:background="#00f"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.zhxh.xtouchsystem.touch.CTextView
+            android:id="@+id/my_text_view"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:background="#f00"
+            android:clickable="true" />
+
+        <com.zhxh.xtouchsystem.touch.CButton
+            android:id="@+id/btn_conflict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90px"
+            android:text="@string/btn_conflict" />
+
+    </com.zhxh.xtouchsystem.touch.CLinearLayout>
+
+</com.zhxh.xtouchsystem.touch.CFrameLayout>
