@@ -15,7 +15,7 @@ import android.widget.Button;
  * Time: 17:20
  * To change this template use File | Settings | File and Code Templates.
  */
-public class CButton extends Button {
+public class CButton extends android.support.v7.widget.AppCompatButton {
     public CButton(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
