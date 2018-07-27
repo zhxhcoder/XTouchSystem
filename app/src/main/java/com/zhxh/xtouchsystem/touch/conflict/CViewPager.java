@@ -22,7 +22,5 @@ public class CViewPager extends ViewPager {
     public boolean onInterceptTouchEvent(MotionEvent arg0) {
         Log.d("zhxh", "pager--->" + super.onInterceptTouchEvent(arg0));
         return super.onInterceptTouchEvent(arg0);
-
     }
-
 }
