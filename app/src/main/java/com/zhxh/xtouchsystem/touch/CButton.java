@@ -24,13 +24,13 @@ public class CButton extends android.support.v7.widget.AppCompatButton {
     public boolean dispatchTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                System.out.println("CButton---dispatchTouchEvent---DOWN");
+                Log.d("zhxh","CButton---dispatchTouchEvent---DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                System.out.println("CButton---dispatchTouchEvent---MOVE");
+                Log.d("zhxh","CButton---dispatchTouchEvent---MOVE");
                 break;
             case MotionEvent.ACTION_UP:
-                System.out.println("CButton---dispatchTouchEvent---UP");
+                Log.d("zhxh","CButton---dispatchTouchEvent---UP");
                 break;
             default:
                 break;
@@ -42,13 +42,13 @@ public class CButton extends android.support.v7.widget.AppCompatButton {
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                System.out.println("CButton---onTouchEvent---DOWN");
+                Log.d("zhxh", "CButton---onTouchEvent---DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                System.out.println("CButton---onTouchEvent---MOVE");
+                Log.d("zhxh","CButton---onTouchEvent---MOVE");
                 break;
             case MotionEvent.ACTION_UP:
-                System.out.println("CButton---onTouchEvent---UP");
+                Log.d("zhxh","CButton---onTouchEvent---UP");
                 break;
             default:
                 break;

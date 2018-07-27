@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-
 import com.zhxh.xtouchsystem.touch.Util;
 
 
@@ -63,7 +62,20 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //button.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim_big));
+
+/*                int height = button.getHeight();
+                int width = button.getWidth();
+                float size = button.getTextSize();
+                height = height * 4 / 5;
+                width = width * 4 / 5;
+                size = size * 4 / 5;
+                button.setLayoutParams(new LinearLayout.LayoutParams(width, height));
+
+                button.setTextSize(size);*/
+
                 Log.d("zhxh", "btn_conflict-onClick");
+                //startActivity(new Intent(MainActivity.this, ConflictMainActivity.class));
             }
         });
         findViewById(R.id.my_text_view).setOnClickListener(new View.OnClickListener() {

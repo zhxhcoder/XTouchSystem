@@ -15,21 +15,21 @@ public class CFrameLayout extends FrameLayout {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
-        Log.d("zhxh", "【省长】-dispatchTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 需要分派");
+        Log.d("zhxh", "[省长]-dispatchTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 需要分派");
         return super.dispatchTouchEvent(event);
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent event) {
         boolean bo = false;
-        Log.d("zhxh", "【省长】-onInterceptTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 拦截吗？" + bo);
+        Log.d("zhxh", "[省长]-onInterceptTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 拦截吗？" + bo);
         return bo;
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         boolean bo = false;
-        Log.d("zhxh", "【省长】-onTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 市长是个废物，下次再也不找你了，我自己来尝试一下。能解决？" + bo);
+        Log.d("zhxh", "[省长]-onTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 市长是个废物，下次再也不找你了，我自己来尝试一下。能解决？" + bo);
         return bo;
     }
 
