@@ -15,6 +15,7 @@ import android.view.WindowManager;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.zhxh.xtouchsystem.Const;
 import com.zhxh.xtouchsystem.R;
 
 @SuppressLint("NewApi")
@@ -45,7 +46,7 @@ public class FirstFragment extends Fragment {
             @Override
             public void onGlobalLayout() {
                 parent.setLimitHeight(horizontal.getHeight());
-                Log.v("yzy", "count-->" + horizontal.getChildCount());
+                Log.d(Const.TAG, "count-->" + horizontal.getChildCount());
                 horizontal.getViewTreeObserver().removeOnGlobalLayoutListener(this);
 
             }
