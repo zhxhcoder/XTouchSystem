@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+
+import com.zhxh.xtouchsystem.touch.CButton;
 import com.zhxh.xtouchsystem.touch.Util;
 import com.zhxh.xtouchsystem.touch.conflict.ConflictMainActivity;
 
@@ -51,21 +53,22 @@ import com.zhxh.xtouchsystem.touch.conflict.ConflictMainActivity;
  * 2，介绍ViewGroup与View绘制过程
  */
 public class MainActivity extends AppCompatActivity {
-    Button button;
+    CButton cButton;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
         Log.d(Const.TAG, "hello");
-        button = findViewById(R.id.cButton);
+        cButton = findViewById(R.id.cButton);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        cButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d(Const.TAG, "cButton-onClick");
                 startActivity(new Intent(MainActivity.this, ConflictMainActivity.class));
             }
         });
+
         findViewById(R.id.cTextView).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

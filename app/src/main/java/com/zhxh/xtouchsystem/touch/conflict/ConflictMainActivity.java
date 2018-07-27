@@ -19,13 +19,13 @@ public class ConflictMainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Conflict touch");
 
         mFragmentManager = this.getSupportFragmentManager();
-        pager = (CViewPager) this.findViewById(R.id.viewpager);
-        FixedPagerAdapter adpater = new FixedPagerAdapter(this, mFragmentManager, pager);
+        pager = this.findViewById(R.id.viewpager);
+        FixedPagerAdapter adapter = new FixedPagerAdapter(this, mFragmentManager, pager);
         ArrayList<String> lists = new ArrayList<String>();
         lists.add(FirstFragment.class.getName());
         lists.add(TwoFragment.class.getName());
-        adpater.setFragments(lists);
-        pager.setAdapter(adpater);
+        adapter.setFragments(lists);
+        pager.setAdapter(adapter);
 
     }
 

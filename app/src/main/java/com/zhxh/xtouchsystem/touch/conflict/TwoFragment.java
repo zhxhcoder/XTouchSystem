@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import com.zhxh.xtouchsystem.R;
 
 public class TwoFragment extends Fragment {
-    private static final String TAG = "TwoFragment";
     public ViewPager parent;
 
     @Override

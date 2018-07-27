@@ -17,8 +17,6 @@ import java.util.Queue;
 
 public class HorizontalListView extends AdapterView<ListAdapter> {
 
-    protected final String TAG = getClass().getSimpleName();
-
     private final static int MAX_SLIDE_Y = 6;
 
     private View childSelected;
