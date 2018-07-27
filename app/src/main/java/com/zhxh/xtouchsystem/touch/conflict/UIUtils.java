@@ -372,7 +372,7 @@ public class UIUtils {
 
     /**
      * @author zhxh
-     *         只用于保存图片大小
+     * 只用于保存图片大小
      */
     public static class BitmapNull {
         private int mWidth = 0;
@@ -447,11 +447,11 @@ public class UIUtils {
     }
 
     /*
-      * 旋转图片
-      * @param angle
-      * @param bitmap
-      * @return Bitmap
-      */
+     * 旋转图片
+     * @param angle
+     * @param bitmap
+     * @return Bitmap
+     */
     public static Bitmap rotaingImageView(int angle, Bitmap bitmap) {
         //旋转图片 动作
         Matrix matrix = new Matrix();

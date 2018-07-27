@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.TextView;
 
-public class CTextView extends TextView {
+public class CTextView extends android.support.v7.widget.AppCompatTextView {
     public CTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }

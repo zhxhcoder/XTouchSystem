@@ -3,13 +3,13 @@
     android:id="@+id/my_frame_layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:layout_margin="120px"
+    android:layout_margin="50dp"
     android:background="#3ff">
 
     <com.zhxh.xtouchsystem.touch.CLinearLayout
         android:id="@+id/my_linear_layout"
-        android:layout_width="450px"
-        android:layout_height="600px"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
         android:layout_gravity="center"
         android:background="#00f"
         android:gravity="center"
@@ -17,8 +17,8 @@
 
         <com.zhxh.xtouchsystem.touch.CTextView
             android:id="@+id/my_text_view"
-            android:layout_width="230px"
-            android:layout_height="280px"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:background="#f00"
             android:clickable="true" />
 
@@ -26,7 +26,7 @@
             android:id="@+id/btn_conflict"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="90px"
+            android:layout_marginTop="45dp"
             android:text="@string/btn_conflict"
             android:textAllCaps="false" />
 

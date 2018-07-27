@@ -46,5 +46,4 @@ public class TouchEventFather extends LinearLayout {
         return super.onTouchEvent(event);
 //        return true;
     }
-
 }

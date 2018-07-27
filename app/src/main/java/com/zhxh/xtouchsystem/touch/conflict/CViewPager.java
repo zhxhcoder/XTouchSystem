@@ -20,12 +20,7 @@ public class CViewPager extends ViewPager {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent arg0) {
-//    Log.v("yzy", "height-->"+limitHeight+",y-->"+arg0.getY());
-//    if(arg0.getY()<limitHeight)
-//      return false;
-//    else
-//      return true;
-        Log.v("yzy", "pager--->" + super.onInterceptTouchEvent(arg0));
+        Log.d("zhxh", "pager--->" + super.onInterceptTouchEvent(arg0));
         return super.onInterceptTouchEvent(arg0);
 
     }

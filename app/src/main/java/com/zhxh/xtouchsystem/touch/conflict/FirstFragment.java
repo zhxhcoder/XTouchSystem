@@ -27,7 +27,7 @@ public class FirstFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_first, container, false);
         //view.getParent().requestDisallowInterceptTouchEvent(true);
-        horizontal = (HorizontalListView) view.findViewById(R.id.hscroll);
+        horizontal = view.findViewById(R.id.hscroll);
         horizontal.setOnTouchListener(new OnTouchListener() {
 
             @Override

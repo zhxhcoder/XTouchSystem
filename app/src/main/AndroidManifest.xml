@@ -20,9 +20,6 @@
             android:name=".touch.conflict.ConflictMainActivity"
             android:label="@string/title_activity_conflict_main" />
 
-        <activity
-            android:name=".candle.CandleStickChartActivity"
-            android:label="candle bar" />
     </application>
 
 </manifest>
