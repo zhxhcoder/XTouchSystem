@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.zhxh.xtouchsystem.touch.CFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/my_frame_layout"
+    android:id="@+id/cFrameLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_margin="50dp"
     android:background="#3ff">
 
     <com.zhxh.xtouchsystem.touch.CLinearLayout
-        android:id="@+id/my_linear_layout"
+        android:id="@+id/cLinearLayout"
         android:layout_width="200dp"
         android:layout_height="300dp"
         android:layout_gravity="center"
@@ -16,18 +16,19 @@
         android:orientation="vertical">
 
         <com.zhxh.xtouchsystem.touch.CTextView
-            android:id="@+id/my_text_view"
+            android:id="@+id/cTextView"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:background="#f00"
-            android:clickable="true" />
+            android:clickable="true"
+            android:focusable="true" />
 
         <com.zhxh.xtouchsystem.touch.CButton
-            android:id="@+id/btn_conflict"
+            android:id="@+id/cButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="45dp"
-            android:text="@string/btn_conflict"
+            android:text="@string/cButton"
             android:textAllCaps="false" />
 
     </com.zhxh.xtouchsystem.touch.CLinearLayout>

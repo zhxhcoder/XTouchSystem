@@ -5,7 +5,8 @@ import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
-import android.widget.Button;
+
+import com.zhxh.xtouchsystem.Const;
 
 /**
  * Created with Android Studio
@@ -24,13 +25,13 @@ public class CButton extends android.support.v7.widget.AppCompatButton {
     public boolean dispatchTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.d("zhxh","CButton---dispatchTouchEvent---DOWN");
+                Log.d(Const.TAG,"CButton---dispatchTouchEvent---DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.d("zhxh","CButton---dispatchTouchEvent---MOVE");
+                Log.d(Const.TAG,"CButton---dispatchTouchEvent---MOVE");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.d("zhxh","CButton---dispatchTouchEvent---UP");
+                Log.d(Const.TAG,"CButton---dispatchTouchEvent---UP");
                 break;
             default:
                 break;
@@ -42,13 +43,13 @@ public class CButton extends android.support.v7.widget.AppCompatButton {
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.d("zhxh", "CButton---onTouchEvent---DOWN");
+                Log.d(Const.TAG, "CButton---onTouchEvent---DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.d("zhxh","CButton---onTouchEvent---MOVE");
+                Log.d(Const.TAG,"CButton---onTouchEvent---MOVE");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.d("zhxh","CButton---onTouchEvent---UP");
+                Log.d(Const.TAG,"CButton---onTouchEvent---UP");
                 break;
             default:
                 break;
@@ -58,20 +59,20 @@ public class CButton extends android.support.v7.widget.AppCompatButton {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        Log.d("zhxh", "CButton-" + "onDraw");
+        Log.d(Const.TAG, "CButton-" + "onDraw");
         super.onDraw(canvas);
     }
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        Log.d("zhxh", "CButton-" + "onMeasure");
+        Log.d(Const.TAG, "CButton-" + "onMeasure");
 
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
-        Log.d("zhxh", "CButton-" + "onLayout");
+        Log.d(Const.TAG, "CButton-" + "onLayout");
 
         super.onLayout(changed, left, top, right, bottom);
     }

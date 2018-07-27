@@ -6,6 +6,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 
+import com.zhxh.xtouchsystem.Const;
+
 public class CViewPager extends ViewPager {
     private static final String TAG = "CViewPager";
     private int limitHeight = 0;
@@ -20,7 +22,7 @@ public class CViewPager extends ViewPager {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent arg0) {
-        Log.d("zhxh", "pager--->" + super.onInterceptTouchEvent(arg0));
+        Log.d(Const.TAG, "pager--->" + super.onInterceptTouchEvent(arg0));
         return super.onInterceptTouchEvent(arg0);
     }
 }

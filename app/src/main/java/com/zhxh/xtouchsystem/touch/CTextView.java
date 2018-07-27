@@ -5,7 +5,7 @@ import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
-import android.widget.TextView;
+import com.zhxh.xtouchsystem.Const;
 
 public class CTextView extends android.support.v7.widget.AppCompatTextView {
     public CTextView(Context context, AttributeSet attrs) {
@@ -14,7 +14,7 @@ public class CTextView extends android.support.v7.widget.AppCompatTextView {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
-        Log.d("zhxh", "[农民]-dispatchTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 需要分派，我下面没人了，怎么办？自己干吧");
+        Log.d(Const.TAG, "[农民]-dispatchTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 需要分派，我下面没人了，怎么办？自己干吧");
         return super.dispatchTouchEvent(event);
     }
 
@@ -22,7 +22,7 @@ public class CTextView extends android.support.v7.widget.AppCompatTextView {
     public boolean onTouchEvent(MotionEvent event) {
 
         boolean bo = true;
-        Log.d("zhxh", "[农民]-onTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 自己动手，埋头苦干。能解决？" + bo);
+        Log.d(Const.TAG, "[农民]-onTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 自己动手，埋头苦干。能解决？" + bo);
         return bo;
     }
 

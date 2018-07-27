@@ -1,5 +1,6 @@
 package com.zhxh.xtouchsystem;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -7,6 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import com.zhxh.xtouchsystem.touch.Util;
+import com.zhxh.xtouchsystem.touch.conflict.ConflictMainActivity;
 
 
 /**
@@ -51,69 +53,55 @@ import com.zhxh.xtouchsystem.touch.Util;
 public class MainActivity extends AppCompatActivity {
     Button button;
 
-    public static final String TAG = MainActivity.class.getSimpleName();
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        Log.d(TAG, "hello");
-        button = findViewById(R.id.btn_conflict);
+        setContentView(R.layout.main_layout);
+        Log.d(Const.TAG, "hello");
+        button = findViewById(R.id.cButton);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //button.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim_big));
-
-/*                int height = button.getHeight();
-                int width = button.getWidth();
-                float size = button.getTextSize();
-                height = height * 4 / 5;
-                width = width * 4 / 5;
-                size = size * 4 / 5;
-                button.setLayoutParams(new LinearLayout.LayoutParams(width, height));
-
-                button.setTextSize(size);*/
-
-                Log.d("zhxh", "btn_conflict-onClick");
-                //startActivity(new Intent(MainActivity.this, ConflictMainActivity.class));
+                Log.d(Const.TAG, "cButton-onClick");
+                startActivity(new Intent(MainActivity.this, ConflictMainActivity.class));
             }
         });
-        findViewById(R.id.my_text_view).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.cTextView).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("zhxh", "my_text_view-onClick");
+                Log.d(Const.TAG, "cTextView-onClick");
             }
         });
-        findViewById(R.id.my_text_view).setOnTouchListener(new View.OnTouchListener() {
+        findViewById(R.id.cTextView).setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                Log.d("zhxh", "my_text_view-onTouch");
+                Log.d(Const.TAG, "cTextView-onTouch");
                 return false;
             }
         });
-        findViewById(R.id.my_linear_layout).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.cLinearLayout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("zhxh", "my_linear_layout-onClick");
+                Log.d(Const.TAG, "cLinearLayout-onClick");
             }
         });
-        findViewById(R.id.my_linear_layout).setOnTouchListener(new View.OnTouchListener() {
+        findViewById(R.id.cLinearLayout).setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                Log.d("zhxh", "my_linear_layout-onTouch");
+                Log.d(Const.TAG, "cLinearLayout-onTouch");
                 return false;
             }
         });
-        findViewById(R.id.my_frame_layout).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.cFrameLayout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("zhxh", "my_frame_layout-onClick");
+                Log.d(Const.TAG, "cFrameLayout-onClick");
             }
         });
-        findViewById(R.id.my_frame_layout).setOnTouchListener(new View.OnTouchListener() {
+        findViewById(R.id.cFrameLayout).setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                Log.d("zhxh", "my_linear_layout-onTouch");
+                Log.d(Const.TAG, "cLinearLayout-onTouch");
                 return false;
             }
         });
@@ -121,14 +109,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.d("zhxh", "[总统]-dispatchTouchEvent-任务<" + Util.actionToString(ev.getAction()) + "> : 需要分派");
+        Log.d(Const.TAG, "[总统]-dispatchTouchEvent-任务<" + Util.actionToString(ev.getAction()) + "> : 需要分派");
         return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
         boolean bo = false;
-        Log.d("zhxh", "[总统]-onTouchEvent-任务<" + Util.actionToString(ev.getAction()) + "> : 下面都解决不了，下次再也不能靠你们了，哼⋯只能自己尝试一下啦。能解决？" + bo);
+        Log.d(Const.TAG, "[总统]-onTouchEvent-任务<" + Util.actionToString(ev.getAction()) + "> : 下面都解决不了，下次再也不能靠你们了，哼⋯只能自己尝试一下啦。能解决？" + bo);
         return bo;
     }
 }

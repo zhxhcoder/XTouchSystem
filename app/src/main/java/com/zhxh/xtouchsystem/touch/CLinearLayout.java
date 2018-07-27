@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.LinearLayout;
 
+import com.zhxh.xtouchsystem.Const;
+
 
 public class CLinearLayout extends LinearLayout {
 
@@ -16,21 +18,21 @@ public class CLinearLayout extends LinearLayout {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
-        Log.d("zhxh", "[市长]-dispatchTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 需要分派");
+        Log.d(Const.TAG, "[市长]-dispatchTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 需要分派");
         return super.dispatchTouchEvent(event);
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent event) {
         boolean bo = false;
-        Log.d("zhxh", "[市长]-onInterceptTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 拦截吗？" + bo);
+        Log.d(Const.TAG, "[市长]-onInterceptTouchEvent-任务<" + Util.actionToString(event.getAction()) + "> : 拦截吗？" + bo);
         return bo;
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
         boolean bo = false;
-        Log.d("zhxh", "[市长]-onTouchEvent-任务<" + Util.actionToString(ev.getAction()) + "> : 农民真没用，下次再也不找你了，我自己来尝试一下。能解决？" + bo);
+        Log.d(Const.TAG, "[市长]-onTouchEvent-任务<" + Util.actionToString(ev.getAction()) + "> : 农民真没用，下次再也不找你了，我自己来尝试一下。能解决？" + bo);
         return bo;
     }
 
